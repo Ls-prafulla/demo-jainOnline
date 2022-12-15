@@ -1,0 +1,195 @@
+.innerpage {
+    background-image: none;
+    @include pos-relative();
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 75px;
+        background: #fff;
+        width: 100%;
+        z-index: 10;
+    }
+    .enquire {
+        .f-wrapper{
+            .form-wrapper{
+                box-shadow: 0px 6px 19.44px 4.56px rgba(0, 0, 0, 0.03);
+            }
+            
+        }
+    }
+    .text-box {
+        background: transparent url("../img/details-page/program-details-desktop.png") no-repeat right center;
+        background-position: 92% 33px;
+        h1{
+            font-family: $font-family-gil-rg;
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: inherit;
+            padding-bottom: 30px;
+            @include pos-relative();
+            &::after{
+                left: -14px;
+            }
+            &::before {
+                content: "";
+                background: $darkyellows;
+                height: 4px;
+                width: 72px;
+                position: absolute;                
+                left: 0;
+                bottom: 0;
+                animation: border-LeftToRight 3s infinite;
+            }
+        }
+        .features{
+            margin-top: 50px;
+        }
+        .hashtag{
+            color: $white;
+            font-family: $font-family-gil-bd;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: right;
+            margin-top: 10px;
+            line-height: 1.3;
+            animation: color-WhiteToYellow 2s infinite;
+            padding-right: 60px;
+            @include pos-relative();
+            &::after {
+                content: "";
+                position: absolute;
+                top: -16px;
+                right: 35px;
+                background: transparent url("../img/big-plus-sign.png") scroll no-repeat top left;
+                height: 28px;
+                width: 28px;
+                margin-left: 273px;
+            }
+        }
+    }
+}
+
+.online{
+    // margin-top: -16px;
+    @include pos-relative();
+    z-index: 1011;
+    h2{
+        color: $darkgray;
+        font-size: 30px;
+        font-family: $font-family-gil-rg;
+        text-align: left;
+        font-weight: inherit;
+        line-height: 1;
+        padding-bottom: 0;
+        max-width: 0 0 45px;
+        &::after{
+            display: none;
+        }
+    }
+
+    @import "../sass/tabs";
+
+    .pointer-list li{
+        color: $darkgray;
+        font-size: 14px;
+
+    }
+    // .tabbed-content{
+    //     .tab-item{
+    //         .item-content{
+    //             .toggle{
+    //                 font-size: 14px;
+    //                 line-height: 24px;
+    //             }
+    //         }
+
+    //     }
+        
+    // }
+    
+    
+}
+
+.program-learner{
+    .learners-container{
+        padding-top: 0;
+    }
+    
+}
+
+.prdetail-corporate{
+    padding-bottom: 75px;
+}
+
+.faq{
+    background: $gray;
+
+    @import "accordian";
+    padding: 70px 0 70px;
+
+    h2{
+        text-align: center;
+    }
+
+    .accord{
+        .accordbx{
+            background: $white;
+            padding: 0 35px 0 40px;
+            margin-bottom: 15px;
+            @include border-radius(5px);
+        }
+        .accordtitle{  
+            padding: 28px 0 24px 0px;          
+
+            &::before{
+                width: 15px;
+                height: 10px;
+                right: 8px;
+                margin-top: 3px;
+                background: transparent url("../img/down-arrow.png") scroll no-repeat right center;
+                @include transition();
+            }
+            &::after{
+                width: 32px;
+                height: 32px;
+                right: 0;
+                margin-top: 3px;
+                background: transparent;
+                border: 1px solid $color-e7;
+                @include border-radius(100%);
+            }
+            &.active{
+                &::before{
+                    transform: rotate(180deg);
+                    margin-top: -3px;
+                }
+                &::after{
+                    display: unset;
+                    
+                }
+
+            }
+            p{
+                color: $darkgray;
+                font-size: 18px;
+                font-family: $font-family-gil-bd;
+            }
+            
+            
+            
+        }
+        .accorddesc{
+            padding: 0px 0 35px;
+            p{
+                font-size: $font-size-base;
+                color: $gray-light;
+            }
+            
+        }
+    }
+    
+
+    
+}

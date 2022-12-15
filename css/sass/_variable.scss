@@ -1,0 +1,76 @@
+$variable-prefix: pr- !default;
+$white: #fff;
+$black: #000;
+// $blue: #00205c;
+$blue: #001c54;
+// $darkblue: #00205c;
+// $navyblue: #001c54;
+// $backblue: #232a4c;
+$darkblue: #001c54;
+$navyblue: #001c54;
+$backblue: #001c54;
+$lightgray: #efffff;
+$gray: #f5f9fc;
+$darkgray: #232937;
+$white-gary: #ebebeb;
+$whitedarkgray: #e9eaeb;
+$lightblack: #646464;
+// $yellow: #fab615;
+$yellow: #ffcc29;
+$grayborder: #cccccc;
+// $darkyellow: #ffcc29;
+$darkyellow: #f8c300;
+// $darkyellows: #f8bf01;
+$darkyellows: #ffcc29;
+$black-gray: #7a7a7a;
+$black-graycolor: #797979;
+$gray-light: #6d6d6d;
+$color-e7: #e7e7e7;
+$color-f8:#f8f8f8;
+$color-e1: #e1e1e1;
+
+
+
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-cursive: cursive !default;
+$font-family-monospace: "Courier New", monospace !default;
+$font-family-fantasy: fantasy !default;
+$font-family-heebo: 'Heebo', sans-serif !default; 
+$font-family-gilory-light: "Gilroy-Light";
+$font-family-gilroy-regular: "Gilroy-Regular";
+$font-family-gilroy-bold: "Gilroy-Bold";
+$font-family-gilory-extrabold: "Gilroy-ExtraBold";
+$font-family-opensans: 'Open Sans', sans-serif;
+
+$font-family-base: var(--#{$variable-prefix}font-cursive);
+$font-family-code: var(--#{$variable-prefix}font-monospace);
+$font-family-fanta: var(--#{$variable-prefix}font-fantasy);
+$font-family-basic: var(--#{$variable-prefix}font-heebo);
+$font-family-osans: var(--#{$variable-prefix}font-opensans);
+
+$font-family-gil-lt: var(--#{$variable-prefix}font-gilroylight);
+$font-family-gil-rg: var(--#{$variable-prefix}font-gilroyregular);
+$font-family-gil-bd: var(--#{$variable-prefix}font-gilroybold);
+$font-family-gil-xbd: var(--#{$variable-prefix}font-gilroyextrabold);
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: var(--#{$variable-prefix}bd-font-weight);
+
+$font-size:16px;
+$font-size-base: var(--#{$variable-prefix}bd-font-size); 
+$font-size-h1: 60px;
+$font-size-h2: 50px;
+$font-size-h3: 42px;
+$font-size-h4: 32px;
+$font-size-h5: 20px;
+$font-size-h6: $font-size-base;
+$font-size-small: 15px;
+
+$line-height: 1.5 !default;
+$line-height-base: var(--#{$variable-prefix}bd-line-height);

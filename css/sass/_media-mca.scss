@@ -1,0 +1,35 @@
+.mca-banner {
+    background: $darkblue url(../img/mca/MCA-BG.png) scroll no-repeat center bottom;
+    background-position-x: 56%;
+    height: 100%;
+
+}
+
+@media screen and (max-width:991px) {
+    .mca-banner {
+        background-image: none;
+        @include pos-relative();
+
+
+        .enquire {
+            .f-wrapper {
+                margin-top: 0;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 340px) {
+    .mca-banner {
+        .enquire {
+            .vis-mob {
+                img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+}
